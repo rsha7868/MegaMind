@@ -1,17 +1,23 @@
 package system.control;
 
 import table.mode.MindDisplay;
+import tools.model.Kahoot;
+
+import java.util.List;
+import java.util.ArrayList;
 
 public class MindContrpoller
 {
-		  //Step 4,6
-		  //add constants for particle types here
-		  public static final int BLUE = 0;
-		  public static final int RED = 1;
-		  public static final int YELLOW = 2;
-		  public static final int GREEN = 3;
-		  
-		  
+	public void start()
+	{
+	List<Colors> var = new ArrayList<>();
+	add(Blue)
+//	String[] colors;
+//	 colors = new String[4];
+//	 colors[BLUE] = "Blue";
+//	 colors[RED] = "Red";
+//	 colors[YELLOW] = "Yellow";
+//	 colors[GREEN] = "Green";
 		  //do not add any more fields below
 		  private int[][] grid;
 		  private MindDisplay display;
@@ -22,22 +28,7 @@ public class MindContrpoller
 		   * @param numRows The number of rows to start with
 		   * @param numCols The number of columns to start with;
 		   */
-		  public SandLab(int numRows, int numCols)
-		  {
-		    String[] names;
-		    // Change this value to add more buttons
-		    //Step 4,6
-		    names = new String[4];
-		    // Each value needs a name for the button
-		    names[EMPTY] = "Empty";
-		    names[METAL] = "Metal";
-		    names[COAL] = "Coal";
-		    names[WOOD] = "Wood";
-		    
-	//1. Add code to initialize the data member grid with same dimensions
-	grid = new int[numRows][numCols];
-		    		
-	display = new SandDisplay("Falling Sand", numRows, numCols, names);
-	}
+		  
 
+	}
 }
