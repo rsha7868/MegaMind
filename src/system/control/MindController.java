@@ -2,7 +2,7 @@ package system.control;
 
 import table.mode.MindDisplay;
 
-public class MindController
+public class MindContrpoller
 {
 		  //Step 4,6
 		  //add constants for particle types here
