@@ -12,7 +12,7 @@ public class MindDisplay extends JFrame
 {
 	private MindController appController;
 	private MindPanel appPanel;
-	
+	public MindDisplay(MindController appController)
 	{
 		super();
 		this.appController = appController;
@@ -24,7 +24,7 @@ public class MindDisplay extends JFrame
 	{
 		this.setContentPane(appPanel);
 		this.setTitle("MegaMind");
-		this.setSize(500, 500);
+		this.setSize(1000, 200);
 		this.setResizable(false);
 		this.setVisible(true);
 	}

@@ -14,13 +14,25 @@ import system.control.MindController;
 public class MindPanel
 {
 	private MindController appController;
-	private JButton firstButton;
+	
+	private JButton BlueButton;
+	private JButton YellowButton;
+	private JButton GreenButton;
+	private JButton WhiteButton;
+	private JButton OrangeButton;
+	private JButton RedButton;
+	
 	private SpringLayout appLayout;
 	public MindPanel(MindController appController)
 	{
 		super();
 		this.appController = appController;
-		firstButton = new JButton("Click on  the button");
+		BlueButton = new JButton("Blue");
+		RedButton = new JButton("Red");
+		GreenButton = new JButton("Green");
+		YellowButton = new JButton("Yellow");
+		WhiteButton = new JButton("White");
+		OrangeButton = new JButton("Orange");
 		
 		appLayout = new SpringLayout();
 		
@@ -35,7 +47,7 @@ public class MindPanel
 	 */
 	private void setupPanel()
 	{
-		this.setBackground(Color.BLUE);
+		this.setBackground(Color.DARK_GRAY);
 		this.setLayout(appLayout);
 		this.add(firstButton);
 		
@@ -47,22 +59,13 @@ public class MindPanel
 	}
 	private void setupListeners()
 	{
-		firstButton.addActionListener(new ActionListener()
-			{
-			public void actionPerformed(ActionEvent click)
-				{
-					changeScreenColor();
-				}
-			
-			});
-	}
-	private void changeScreenColor()
-	{
-		int red = (int) (Math.random() * 256);
-		int green = (int) (Math.random() * 256);
-		int blue = (int) (Math.random() * 256);
-		
-		this.setBackground(new Color(red, green, blue));
-		
+//		firstButton.addActionListener(new ActionListener()
+//			{
+//			public void actionPerformed(ActionEvent click)
+//				{
+//					changeScreenColor();
+//				}
+//			
+//			});
 	}
 }
