@@ -24,8 +24,8 @@ public class MindDisplay extends JFrame
 	{
 		this.setContentPane(appPanel);
 		this.setTitle("MegaMind");
-		this.setSize(1000, 200);
-		this.setResizable(false);
+		this.setSize(200, 200);
+		this.setResizable(true);
 		this.setVisible(true);
 	}
 }

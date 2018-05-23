@@ -5,13 +5,14 @@ import javax.*;
 import java.awt.*;
 import java.awt.event.*;
 
+import javax.swing.JPanel;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.SpringLayout;
 
 import system.control.MindController;
 
-public class MindPanel
+public class MindPanel extends JPanel
 {
 	private MindController appController;
 	
@@ -49,13 +50,28 @@ public class MindPanel
 	{
 		this.setBackground(Color.DARK_GRAY);
 		this.setLayout(appLayout);
-		this.add(firstButton);
+		this.add(BlueButton);
+		this.add(RedButton);
+		this.add(GreenButton);
+		this.add(YellowButton);
+		this.add(WhiteButton);
+		this.add(OrangeButton);
 		
 	}
 	private void setupLayout()
 	{
-		appLayout.putConstraint(SpringLayout.NORTH, firstButton, 97, SpringLayout.NORTH, this);
-		appLayout.putConstraint(SpringLayout.WEST, firstButton, 80, SpringLayout.WEST, this);
+		appLayout.putConstraint(SpringLayout.NORTH, OrangeButton, 6, SpringLayout.SOUTH, OrangeButton);
+		appLayout.putConstraint(SpringLayout.EAST, OrangeButton, 0, SpringLayout.EAST, OrangeButton);
+		appLayout.putConstraint(SpringLayout.NORTH, WhiteButton, 6, SpringLayout.SOUTH, WhiteButton);
+		appLayout.putConstraint(SpringLayout.WEST, WhiteButton, 0, SpringLayout.WEST, WhiteButton);
+		appLayout.putConstraint(SpringLayout.NORTH, YellowButton, 6, SpringLayout.SOUTH, YellowButton);
+		appLayout.putConstraint(SpringLayout.WEST, YellowButton, 0, SpringLayout.WEST, YellowButton);
+		appLayout.putConstraint(SpringLayout.NORTH, GreenButton, 6, SpringLayout.SOUTH, GreenButton);
+		appLayout.putConstraint(SpringLayout.WEST, GreenButton, 0, SpringLayout.WEST, GreenButton);
+		appLayout.putConstraint(SpringLayout.SOUTH, RedButton, 6, SpringLayout.SOUTH, RedButton);
+		appLayout.putConstraint(SpringLayout.EAST, RedButton, 0, SpringLayout.EAST, RedButton);
+		appLayout.putConstraint(SpringLayout.NORTH, BlueButton, 6, SpringLayout.SOUTH, BlueButton);
+		appLayout.putConstraint(SpringLayout.WEST, BlueButton, 0, SpringLayout.WEST, BlueButton);
 	}
 	private void setupListeners()
 	{
