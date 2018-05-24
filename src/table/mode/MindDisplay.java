@@ -10,11 +10,13 @@ import table.mode.MindPanel;
 
 public class MindDisplay extends JFrame
 {
+	private MindDisplay brainDisplay;
 	private MindController appController;
 	private MindPanel appPanel;
-	public MindDisplay(MindController appController)
+	public MindDisplay()
 	{
 		super();
+		brainDisplay = new MindDisplay();
 		this.appController = appController;
 		this.appPanel = new MindPanel(appController);
 		setupFrame();
@@ -22,9 +24,9 @@ public class MindDisplay extends JFrame
 	
 	private void setupFrame()
 	{
-		this.setContentPane(appPanel);
+		this.setContentPane(brainDisplay);
 		this.setTitle("MegaMind");
-		this.setSize(500, 500);
+		this.setSize(400, 1000);
 		this.setResizable(false);
 		this.setVisible(true);
 	}
