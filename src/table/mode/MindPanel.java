@@ -11,10 +11,12 @@ import javax.swing.JFrame;
 import javax.swing.SpringLayout;
 
 import system.control.MindController;
+import javax.swing.SwingConstants;
 
 public class MindPanel extends JPanel
 {
 	private MindController appController;
+	private SpringLayout appLayout;
 	
 	private JButton BlueButton;
 	private JButton YellowButton;
@@ -23,11 +25,11 @@ public class MindPanel extends JPanel
 	private JButton OrangeButton;
 	private JButton RedButton;
 	
-	private SpringLayout appLayout;
 	public MindPanel(MindController appController)
 	{
 		super();
 		this.appController = appController;
+		
 		BlueButton = new JButton("Blue");
 		RedButton = new JButton("Red");
 		GreenButton = new JButton("Green");
@@ -35,7 +37,6 @@ public class MindPanel extends JPanel
 		WhiteButton = new JButton("White");
 		OrangeButton = new JButton("Orange");
 		
-		appLayout = new SpringLayout();
 		
 		setupPanel();
 		setupLayout();
@@ -48,8 +49,14 @@ public class MindPanel extends JPanel
 	 */
 	private void setupPanel()
 	{
-		this.setBackground(Color.DARK_GRAY);
+		this.setForeground(Color.WHITE);
+		this.setBackground(Color.BLACK);
 		this.setLayout(appLayout);
+		
+
+		
+		appLayout = new SpringLayout();
+		
 		this.add(BlueButton);
 		this.add(RedButton);
 		this.add(GreenButton);
@@ -57,21 +64,29 @@ public class MindPanel extends JPanel
 		this.add(WhiteButton);
 		this.add(OrangeButton);
 		
+		
+		BlueButton.setBackground(Color.BLUE);
+		RedButton.setBackground(Color.RED);
+		GreenButton.setBackground(Color.GREEN);
+		YellowButton.setBackground(Color.YELLOW);
+		WhiteButton.setBackground(Color.WHITE);
+		OrangeButton.setBackground(Color.ORANGE);
+		
 	}
 	private void setupLayout()
 	{
-		appLayout.putConstraint(SpringLayout.NORTH, OrangeButton, 6, SpringLayout.SOUTH, OrangeButton);
+		appLayout.putConstraint(SpringLayout.NORTH, OrangeButton, 10, SpringLayout.SOUTH, OrangeButton);
 		appLayout.putConstraint(SpringLayout.EAST, OrangeButton, 0, SpringLayout.EAST, OrangeButton);
-		appLayout.putConstraint(SpringLayout.NORTH, WhiteButton, 6, SpringLayout.SOUTH, WhiteButton);
-		appLayout.putConstraint(SpringLayout.WEST, WhiteButton, 0, SpringLayout.WEST, WhiteButton);
-		appLayout.putConstraint(SpringLayout.NORTH, YellowButton, 6, SpringLayout.SOUTH, YellowButton);
-		appLayout.putConstraint(SpringLayout.WEST, YellowButton, 0, SpringLayout.WEST, YellowButton);
-		appLayout.putConstraint(SpringLayout.NORTH, GreenButton, 6, SpringLayout.SOUTH, GreenButton);
-		appLayout.putConstraint(SpringLayout.WEST, GreenButton, 0, SpringLayout.WEST, GreenButton);
-		appLayout.putConstraint(SpringLayout.SOUTH, RedButton, 6, SpringLayout.SOUTH, RedButton);
-		appLayout.putConstraint(SpringLayout.EAST, RedButton, 0, SpringLayout.EAST, RedButton);
-		appLayout.putConstraint(SpringLayout.NORTH, BlueButton, 6, SpringLayout.SOUTH, BlueButton);
-		appLayout.putConstraint(SpringLayout.WEST, BlueButton, 0, SpringLayout.WEST, BlueButton);
+		appLayout.putConstraint(SpringLayout.NORTH, WhiteButton, 20, SpringLayout.SOUTH, WhiteButton);
+		appLayout.putConstraint(SpringLayout.WEST, WhiteButton, 10, SpringLayout.WEST, WhiteButton);
+		appLayout.putConstraint(SpringLayout.NORTH, YellowButton, 30, SpringLayout.SOUTH, YellowButton);
+		appLayout.putConstraint(SpringLayout.WEST, YellowButton, 20, SpringLayout.WEST, YellowButton);
+		appLayout.putConstraint(SpringLayout.NORTH, GreenButton, 40, SpringLayout.SOUTH, GreenButton);
+		appLayout.putConstraint(SpringLayout.WEST, GreenButton, 30, SpringLayout.WEST, GreenButton);
+		appLayout.putConstraint(SpringLayout.SOUTH, RedButton, 50, SpringLayout.SOUTH, RedButton);
+		appLayout.putConstraint(SpringLayout.EAST, RedButton, 40, SpringLayout.EAST, RedButton);
+		appLayout.putConstraint(SpringLayout.NORTH, BlueButton, 60, SpringLayout.SOUTH, BlueButton);
+		appLayout.putConstraint(SpringLayout.WEST, BlueButton, 50, SpringLayout.WEST, BlueButton);
 	}
 	private void setupListeners()
 	{
