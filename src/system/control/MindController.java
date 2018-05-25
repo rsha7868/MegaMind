@@ -1,6 +1,6 @@
 package system.control;
 
-import table.mode.MindDisplay;
+import table.mode.MindFrame;
 import table.mode.MindPanel;
 
 import java.util.ArrayList;
