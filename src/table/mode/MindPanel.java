@@ -24,6 +24,8 @@ public class MindPanel extends JPanel
 	private JButton WhiteButton;
 	private JButton OrangeButton;
 	private JButton RedButton;
+	private JButton btnHelloBoss;
+	
 	
 	public MindPanel(MindController appController)
 	{
@@ -49,20 +51,20 @@ public class MindPanel extends JPanel
 	 */
 	private void setupPanel()
 	{
-		this.setForeground(Color.WHITE);
-		this.setBackground(Color.BLACK);
+		this.setForeground(Color.BLACK);
+		this.setBackground(Color.LIGHT_GRAY);
 		this.setLayout(appLayout);
 		
 
 		
 		appLayout = new SpringLayout();
 		
-		this.add(BlueButton);
-		this.add(RedButton);
-		this.add(GreenButton);
-		this.add(YellowButton);
-		this.add(WhiteButton);
-		this.add(OrangeButton);
+		add(BlueButton);
+		add(RedButton);
+		add(GreenButton);
+		add(YellowButton);
+		add(WhiteButton);
+		add(OrangeButton);
 		
 		
 		BlueButton.setBackground(Color.BLUE);
