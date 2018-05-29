@@ -75,18 +75,18 @@ public class MindPanel extends JPanel
 	}
 	private void setupLayout()
 	{
-		appLayout.putConstraint(SpringLayout.NORTH, OrangeButton, 10, SpringLayout.SOUTH, OrangeButton);
-		appLayout.putConstraint(SpringLayout.EAST, OrangeButton, 0, SpringLayout.EAST, OrangeButton);
-		appLayout.putConstraint(SpringLayout.NORTH, WhiteButton, 20, SpringLayout.SOUTH, WhiteButton);
-		appLayout.putConstraint(SpringLayout.WEST, WhiteButton, 10, SpringLayout.WEST, WhiteButton);
-		appLayout.putConstraint(SpringLayout.NORTH, YellowButton, 30, SpringLayout.SOUTH, YellowButton);
-		appLayout.putConstraint(SpringLayout.WEST, YellowButton, 20, SpringLayout.WEST, YellowButton);
-		appLayout.putConstraint(SpringLayout.NORTH, GreenButton, 40, SpringLayout.SOUTH, GreenButton);
-		appLayout.putConstraint(SpringLayout.WEST, GreenButton, 30, SpringLayout.WEST, GreenButton);
-		appLayout.putConstraint(SpringLayout.SOUTH, RedButton, 50, SpringLayout.SOUTH, RedButton);
-		appLayout.putConstraint(SpringLayout.EAST, RedButton, 40, SpringLayout.EAST, RedButton);
-		appLayout.putConstraint(SpringLayout.NORTH, BlueButton, 60, SpringLayout.SOUTH, BlueButton);
-		appLayout.putConstraint(SpringLayout.WEST, BlueButton, 50, SpringLayout.WEST, BlueButton);
+//		appLayout.putConstraint(SpringLayout.NORTH, OrangeButton, 10, SpringLayout.SOUTH, OrangeButton);
+//		appLayout.putConstraint(SpringLayout.EAST, OrangeButton, 0, SpringLayout.EAST, OrangeButton);
+//		appLayout.putConstraint(SpringLayout.NORTH, WhiteButton, 20, SpringLayout.SOUTH, WhiteButton);
+//		appLayout.putConstraint(SpringLayout.WEST, WhiteButton, 10, SpringLayout.WEST, WhiteButton);
+//		appLayout.putConstraint(SpringLayout.NORTH, YellowButton, 30, SpringLayout.SOUTH, YellowButton);
+//		appLayout.putConstraint(SpringLayout.WEST, YellowButton, 20, SpringLayout.WEST, YellowButton);
+//		appLayout.putConstraint(SpringLayout.NORTH, GreenButton, 40, SpringLayout.SOUTH, GreenButton);
+//		appLayout.putConstraint(SpringLayout.WEST, GreenButton, 30, SpringLayout.WEST, GreenButton);
+//		appLayout.putConstraint(SpringLayout.SOUTH, RedButton, 50, SpringLayout.SOUTH, RedButton);
+//		appLayout.putConstraint(SpringLayout.EAST, RedButton, 40, SpringLayout.EAST, RedButton);
+//		appLayout.putConstraint(SpringLayout.NORTH, BlueButton, 60, SpringLayout.SOUTH, BlueButton);
+//		appLayout.putConstraint(SpringLayout.WEST, BlueButton, 50, SpringLayout.WEST, BlueButton);
 	}
 	private void setupListeners()
 	{
