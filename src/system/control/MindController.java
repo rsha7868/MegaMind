@@ -7,11 +7,11 @@ import java.util.ArrayList;
 
 public class MindController
 {
-	private MindPanel appFrame;
+	private MindFrame appFrame;
 
 	public MindController()
 	{
-	appFrame = new MindPanel(this);
+		appFrame = new MindFrame(this);
 	}
 	public void start()
 	{
