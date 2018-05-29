@@ -23,6 +23,8 @@ public class MindPanel extends JPanel
 	private JButton RedButton;
 	
 	
+	
+	
 	public MindPanel(MindController appController)
 	{
 		

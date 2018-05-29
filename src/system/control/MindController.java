@@ -3,6 +3,7 @@ package system.control;
 import table.mode.MindFrame;
 import table.mode.MindPanel;
 
+import java.awt.SystemColor;
 import java.util.ArrayList;
 
 public class MindController
@@ -12,6 +13,7 @@ public class MindController
 	public MindController()
 	{
 		appFrame = new MindFrame(this);
+		
 	}
 	public void start()
 	{
