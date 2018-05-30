@@ -34,27 +34,27 @@ public class MindPanel extends JPanel
 		
 		BlueButton = new JButton("Blue");
 		BlueButton.setForeground(Color.BLUE);
-		BlueButton.setBackground(Color.BLUE);
+		BlueButton.setBackground(UIManager.getColor("Button.background"));
 		
 		RedButton = new JButton("Red");
 		RedButton.setForeground(Color.RED);
-		RedButton.setBackground(Color.RED);
+		RedButton.setBackground(UIManager.getColor("Button.background"));
 		
 		GreenButton = new JButton("Green");
 		GreenButton.setForeground(Color.GREEN);
-		GreenButton.setBackground(Color.GREEN);
+		GreenButton.setBackground(UIManager.getColor("Button.background"));
 		
 		YellowButton = new JButton("Yellow");
-		YellowButton.setForeground(new Color(255, 255, 0));
+		YellowButton.setForeground(Color.YELLOW);
 		YellowButton.setBackground(UIManager.getColor("Button.background"));
 		
 		WhiteButton = new JButton("White");
 		WhiteButton.setForeground(Color.WHITE);
-		WhiteButton.setBackground(Color.WHITE);
+		WhiteButton.setBackground(UIManager.getColor("Button.background"));
 		
 		OrangeButton = new JButton("Orange");
 		OrangeButton.setForeground(Color.ORANGE);
-		OrangeButton.setBackground(Color.ORANGE);
+		OrangeButton.setBackground(UIManager.getColor("Button.background"));
 		
 		setupPanel();
 		setupLayout();

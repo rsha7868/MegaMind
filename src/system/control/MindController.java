@@ -17,15 +17,40 @@ public class MindController
 	}
 	public void start()
 	{
-	ArrayList<String> colors = new ArrayList<>();
-	
+//		this.colorList = new ArrayList<String>();
+	}
+	private void colorList()
+	{
 	//Adding the colors to the class methad.
-	colors.add("Blue");
-	colors.add("Red");
-	colors.add("Green");
-	colors.add("Yellow");
-	colors.add("White");
-	colors.add("Orange");
+//	colorList.add("Blue");
+//	color.add("Red");
+//	color.add("Green");
+//	color.add("Yellow");
+//	color.add("White");
+//	color.add("Orange");
+	}
+	public boolean color(String color)
+	{
+		for(String s : color)
+		{
+			if(color == "Blue")
+			{
+				return true;
+			}
+		}
+	}
+//	for(int color = 0; 6 <= Button.background; color++)
+//	{
+//		if(color == BlueButton)
+//		{
+//			set(Button.background(Color.BLUE));
+//		}
+//	}
+	
+	
+	
+	
+	
 	
 	}
 }
