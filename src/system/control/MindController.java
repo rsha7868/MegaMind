@@ -29,16 +29,16 @@ public class MindController
 //	color.add("White");
 //	color.add("Orange");
 	}
-	public boolean color(String color)
-	{
-		for(String s : color)
-		{
-			if(color == "Blue")
-			{
-				return true;
-			}
-		}
-	}
+//	public boolean color(String color)
+//	{
+//		for(String s : color)
+//		{
+//			if(color == "Blue")
+//			{
+//				return true;
+//			}
+//		}
+//	}
 //	for(int color = 0; 6 <= Button.background; color++)
 //	{
 //		if(color == BlueButton)
@@ -53,4 +53,4 @@ public class MindController
 	
 	
 	}
-}
+//}

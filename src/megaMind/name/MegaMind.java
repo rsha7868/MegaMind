@@ -23,41 +23,41 @@ public class MegaMind
 		colorList.add("White");
 		colorList.add("Orange");
 	}
-	public String colorList(boolean Button)
+	//public String colorList(boolean Button)
 	{
 //		while(colorList < 6)
-		for(String s : colorList)
-		{
-			if(colorList == "Blue")
-			{
-				return String = "True";
-			}
-			else
-			{
-				return String = "Wrong";
-			}
-			else if(Button == "Red")
-			{
-				return true;
-			}
-			else if(Button == "Green")
-			{
-				return true;
-			}
-			else if(Button== "Yellow")
-			{
-				return true;
-			}
-			else if(Button == "White")
-			{
-				return true;
-			}
-			else if(Button == "Orange")
-			{
-				return true;
-			}
-			return false;
-		}
+//		for(String s : colorList)
+//		{
+//			if(colorList == "Blue")
+//			{
+//				return String = "True";
+//			}
+//			else
+//			{
+//				return String = "Wrong";
+//			}
+//			else if(Button == "Red")
+//			{
+//				return true;
+//			}
+//			else if(Button == "Green")
+//			{
+//				return true;
+//			}
+//			else if(Button== "Yellow")
+//			{
+//				return true;
+//			}
+//			else if(Button == "White")
+//			{
+//				return true;
+//			}
+//			else if(Button == "Orange")
+//			{
+//				return true;
+//			}
+//			return false;
+//		}
 		//for(int index = 0; index < colorList.length; index++)
 		{
 //			if(colorList == "Blue")
